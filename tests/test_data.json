@@ -1,0 +1,22 @@
+[
+{
+  "user_name": "text",
+  "email": "email",
+  "phone": "phone"
+},
+{
+  "user_email": "random@adress.com",
+  "feedback_text": "random text",
+  "submission_date": "1990-09-01"
+},
+{
+  "guest_name": "kakoyto text",
+  "booking_date": "2024-07-01",
+  "contact_email": "test@example.com",
+  "contact_phone": "+7 911 734 90 01"
+},
+{
+  "user_email": "test@example.com",
+  "submission_date": "21.09.1998"
+}
+]

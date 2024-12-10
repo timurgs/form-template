@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    restart: always
+    volumes:
+      - .:/app
+    ports:
+      - "8004:8000"
+    depends_on:
+      - mongo
+    networks:
+      - form_template
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    networks:
+      - form_template
+
+  tests:
+    build: .
+    volumes:
+      - .:/app
+    command: pytest -s tests/
+    depends_on:
+      - mongo
+      - web
+    networks:
+      - form_template
+
+networks:
+  form_template:
+    driver: bridge

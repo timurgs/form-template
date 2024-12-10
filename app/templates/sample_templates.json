@@ -1,0 +1,37 @@
+[
+{
+  "name": "User Registration",
+  "fields": {
+    "user_name": "text",
+    "email": "email",
+    "phone": "phone",
+    "birth_date": "date"
+  }
+},
+  {
+    "name": "Product Order",
+    "fields": {
+      "customer_name": "text",
+      "order_date": "date",
+      "email": "email",
+      "shipping_phone": "phone"
+    }
+  },
+  {
+    "name": "Feedback Form",
+    "fields": {
+      "user_email": "email",
+      "feedback_text": "text",
+      "submission_date": "date"
+    }
+  },
+  {
+    "name": "Booking Form",
+    "fields": {
+      "guest_name": "text",
+      "booking_date": "date",
+      "contact_email": "email",
+      "contact_phone": "phone"
+    }
+  }
+]
